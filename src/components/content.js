@@ -1,4 +1,5 @@
 import React from 'react';
+import ShowDiv from './return';
 
 const Content = (day) => {
     return (
@@ -10,11 +11,8 @@ const Content = (day) => {
                 <div className="occupation">Occupation</div>
             </div>
             <div className="inputs">
-        <div className="inputs__1">
-        <input className="inputs__time" type="text" placeholder="06:00-07:00" />
-        <input className="inputs__occupation" type="text" placeholder="Gymnastics" />
-        </div>
-        <div className="inputs__2">
+ 
+       <div className="inputs__2">
         <input className="inputs__time" type="text" placeholder="08:00-14:40" />
         <input className="inputs__occupation" type="text" placeholder="Lessons at school" />
         </div>
@@ -34,7 +32,8 @@ const Content = (day) => {
         </div>
 
                 <div className="newLine">
-                    <button className="smallButton"><i class="fas fa-plus-circle"></i></button>
+    
+                    <button className="smallButton"  onClick= { ShowDiv() } > <i className="fas fa-plus-circle"> </i> </button>
                     <div className="newLine__text">Add a new line</div>
                 </div>
 

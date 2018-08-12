@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  Header from './header';
 import Content from './content';
 
+
 export default class App extends Component {
   render() {
     return (
@@ -19,8 +20,10 @@ export default class App extends Component {
        <div className="sunday"> { Content('Sunday') } </div>
        </div>
          <div className="button-wrapper">
-        <button className="button"> Done </button>
+        <button className="button" > Done </button>
           </div>
+
+         
           
       </div>
     );
